@@ -1,0 +1,51 @@
+# ============================================
+# Parallel Word Count - .gitignore
+# ============================================
+
+# --- Build Artifacts ---
+*.o
+*.obj
+*.exe
+*.out
+*.a
+*.so
+*.dll
+build/
+bin/
+
+# --- Compiled Executables ---
+word_count_seq
+word_count_mpi
+
+# --- Dataset Files (too large for git) ---
+data/*.txt
+data/*.xml
+data/*.bz2
+data/*.gz
+data/*.zip
+data/*.csv
+!data/.gitkeep
+
+# --- Results (regeneratable) ---
+results/*.csv
+results/*.png
+results/*.log
+!results/.gitkeep
+
+# --- OS Files ---
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# --- Editor / IDE ---
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# --- Python ---
+__pycache__/
+*.pyc
+.venv/
+venv/
